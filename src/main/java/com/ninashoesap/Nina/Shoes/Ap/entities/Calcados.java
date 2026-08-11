@@ -1,5 +1,6 @@
 package com.ninashoesap.Nina.Shoes.Ap.entities;
 
+import java.io.Serializable;
 import java.util.Objects;
 
 import com.ninashoesap.Nina.Shoes.Ap.entities.enums.TipoCalcado;
@@ -12,7 +13,7 @@ import jakarta.persistence.Table;
 
 @Entity
 @Table(name = "tb_calcados")
-public class Calcados {
+public class Calcados implements Serializable {
 
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -21,13 +22,13 @@ public class Calcados {
 	private String nomeSapato;
 	private TipoCalcado tipoCalcado;
 	private Integer qtd33;
-	private Integer qtd34;
+	/*private Integer qtd34;
 	private Integer qtd35;
 	private Integer qtd36;
 	private Integer qtd37;
 	private Integer qtd38;
 	private Integer qtd39;
-	private Integer qtd40;
+	private Integer qtd40;*/
 
 	//Getter and Setters
 	
@@ -50,7 +51,7 @@ public class Calcados {
 	public Integer getQtd33() {
 		return qtd33;
 	}
-	public void setQtd33(Integer qtd33) {
+	/*public void setQtd33(Integer qtd33) {
 		this.qtd33 = qtd33;
 	}
 	public Integer getQtd34() {
@@ -94,22 +95,22 @@ public class Calcados {
 	}
 	public void setQtd40(Integer qtd40) {
 		this.qtd40 = qtd40;
-	}
+	}*/
 
 	//Constructor
 	
-	public Calcados(String nomeSapato, TipoCalcado tipoCalcado, Integer qtd33, Integer qtd34, Integer qtd35,
-			Integer qtd36, Integer qtd37, Integer qtd38, Integer qtd39, Integer qtd40) {
+	public Calcados(String nomeSapato, TipoCalcado tipoCalcado, Integer qtd33/*, Integer qtd34, Integer qtd35,
+			Integer qtd36, Integer qtd37, Integer qtd38, Integer qtd39, Integer qtd40*/) {
 		this.nomeSapato = nomeSapato;
 		this.tipoCalcado = tipoCalcado;
 		this.qtd33 = qtd33;
-		this.qtd34 = qtd34;
+		/*this.qtd34 = qtd34;
 		this.qtd35 = qtd35;
 		this.qtd36 = qtd36;
 		this.qtd37 = qtd37;
 		this.qtd38 = qtd38;
 		this.qtd39 = qtd39;
-		this.qtd40 = qtd40;
+		this.qtd40 = qtd40;*/
 	}
 
 	@Override
