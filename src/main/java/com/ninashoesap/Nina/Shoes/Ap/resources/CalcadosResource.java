@@ -14,7 +14,7 @@ public class CalcadosResource {
 
 	@GetMapping
 	public ResponseEntity<Calcados> findAll(){
-		Calcados sapatilha = new Calcados("sapatilha",TipoCalcado.SAPATILHA,1);
+		Calcados sapatilha = new Calcados(null, "sapatilha",TipoCalcado.SAPATILHA,1);
 		return ResponseEntity.ok().body(sapatilha);
 	}
 }

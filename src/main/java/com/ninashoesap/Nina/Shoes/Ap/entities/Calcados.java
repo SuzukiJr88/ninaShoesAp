@@ -104,23 +104,19 @@ public class Calcados implements Serializable {
 
 	//Constructor
 	
-	public Calcados(String nomeSapato, TipoCalcado tipoCalcado, Integer qtd33/*, Integer qtd34, Integer qtd35,
-			Integer qtd36, Integer qtd37, Integer qtd38, Integer qtd39, Integer qtd40*/) {
-		this.nomeSapato = nomeSapato;
-		this.tipoCalcado = tipoCalcado;
-		this.qtd33 = qtd33;
-		/*this.qtd34 = qtd34;
-		this.qtd35 = qtd35;
-		this.qtd36 = qtd36;
-		this.qtd37 = qtd37;
-		this.qtd38 = qtd38;
-		this.qtd39 = qtd39;
-		this.qtd40 = qtd40;*/
-	}
+	
 
 	@Override
 	public int hashCode() {
 		return Objects.hash(id);
+	}
+
+	public Calcados(Long id, String nomeSapato, TipoCalcado tipoCalcado, Integer qtd33) {
+		super();
+		this.id = id;
+		this.nomeSapato = nomeSapato;
+		this.tipoCalcado = tipoCalcado;
+		this.qtd33 = qtd33;
 	}
 
 	@Override
