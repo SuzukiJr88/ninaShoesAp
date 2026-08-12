@@ -111,6 +111,10 @@ public class Calcados implements Serializable {
 		return Objects.hash(id);
 	}
 
+	public Calcados() {
+		
+	}
+	
 	public Calcados(Long id, String nomeSapato, TipoCalcado tipoCalcado, Integer qtd33) {
 		super();
 		this.id = id;
