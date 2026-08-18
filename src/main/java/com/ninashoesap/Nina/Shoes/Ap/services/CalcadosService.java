@@ -23,4 +23,8 @@ public class CalcadosService {
 		Optional<Calcados> obj = repository.findById(id);
 		return obj.get();
 	}
+	
+	public Calcados insert(Calcados obj) {
+		return repository.save(obj);
+	}
 }
