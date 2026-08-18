@@ -27,4 +27,8 @@ public class CalcadosService {
 	public Calcados insert(Calcados obj) {
 		return repository.save(obj);
 	}
+	
+	public void delete(Long id) {
+		repository.deleteById(id);
+	}
 }
