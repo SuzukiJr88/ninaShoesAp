@@ -47,14 +47,22 @@ public class Calcados implements Serializable {
 	public void setNomeSapato(String nomeSapato) {
 		this.nomeSapato = nomeSapato;
 	}
+	
 	public TipoCalcado getTipoCalcado() {
 		return tipoCalcado;
 	}
+
 	public void setTipoCalcado(TipoCalcado tipoCalcado) {
 		this.tipoCalcado = tipoCalcado;
 	}
+
+	public void setQtd33(Integer qtd33) {
+		this.qtd33 = qtd33;
+	}
+
 	public Integer getQtd33() {
 		return qtd33;
+		
 	}
 	/*public void setQtd33(Integer qtd33) {
 		this.qtd33 = qtd33;

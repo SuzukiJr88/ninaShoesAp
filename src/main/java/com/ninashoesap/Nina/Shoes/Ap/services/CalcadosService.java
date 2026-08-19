@@ -31,4 +31,16 @@ public class CalcadosService {
 	public void delete(Long id) {
 		repository.deleteById(id);
 	}
+	
+	public Calcados update(Long id, Calcados obj) {
+		Calcados entity = repository.getReferenceById(id);
+		updateData(entity,obj);
+		return repository.save(entity);
+	}
+	
+	private void updateData(Calcados entity, Calcados obj) {
+		if(obj.getNomeSapato() != null)	entity.setNomeSapato(obj.getNomeSapato());
+		if(obj.getTipoCalcado() != null) entity.setTipoCalcado(obj.getTipoCalcado());
+		if(obj.getQtd33() != null) entity.setQtd33(obj.getQtd33());
+	}
 }
